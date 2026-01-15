@@ -14,6 +14,8 @@ PERMISSIONS = {
     "INTERACTION_START": "interaction:start",
     "INTERACTION_CLOSE": "interaction:close",
 
+    "SUMMARY_APPROVE": "summary:approve",
+    "SUMMARY_REJECT": "summary:reject",
 
     # Phase-1 onwards
     # "PATIENT_CREATE": "patient:create",

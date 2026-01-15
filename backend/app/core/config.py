@@ -12,6 +12,8 @@ class Settings(BaseSettings):
     MONGO_URL: str
     REDIS_URL: str
     MONGO_DB_NAME: str = "emr_control_plane"
+    OPENAI_API_KEY: str
+
 
     ENV: str = "development"
 
