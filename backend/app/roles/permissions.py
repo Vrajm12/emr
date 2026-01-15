@@ -9,6 +9,8 @@ PERMISSIONS = {
 
     "TENANT_VIEW": "tenant:view",
     "TENANT_UPDATE": "tenant:update",
+    "TENANT_CREATE": "tenant:create",
+
 
     # Phase-1 onwards
     # "PATIENT_CREATE": "patient:create",

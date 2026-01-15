@@ -2,6 +2,7 @@ ROLES = {
     "SYSTEM_ADMIN": {
         "name": "System Admin",
         "permissions": [
+            "tenant:create",
             "tenant:view",
             "tenant:update",
             "audit:view"
