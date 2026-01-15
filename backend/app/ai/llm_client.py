@@ -3,6 +3,9 @@ from app.core.config import settings
 
 client = OpenAI(api_key=settings.OPENAI_API_KEY)
 
+SYSTEM_PROMPT = "You are a medical transcription summarization assistant."
+SUMMARY_PROMPT = "Please summarize the following medical transcript:\n\n{transcript}"
+
 async def generate_summary(transcript: str):
     prompt = SUMMARY_PROMPT.format(transcript=transcript)
 
