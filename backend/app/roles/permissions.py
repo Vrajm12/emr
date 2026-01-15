@@ -11,6 +11,9 @@ PERMISSIONS = {
     "TENANT_UPDATE": "tenant:update",
     "TENANT_CREATE": "tenant:create",
 
+    "INTERACTION_START": "interaction:start",
+    "INTERACTION_CLOSE": "interaction:close",
+
 
     # Phase-1 onwards
     # "PATIENT_CREATE": "patient:create",
