@@ -1,0 +1,36 @@
+# Core dependencies
+fastapi
+uvicorn[standard]
+python-multipart
+pydantic
+pydantic-settings
+
+# Database
+motor
+pymongo
+sqlalchemy
+alembic
+psycopg2-binary
+
+# AI & ML
+openai
+openai-whisper
+torch
+torchaudio
+
+# Audio processing
+ffmpeg-python
+
+# Authentication & Security
+python-jose[cryptography]
+passlib[bcrypt]
+python-multipart
+
+# Utils
+python-dotenv
+
+# Testing
+pytest
+pytest-asyncio
+pytest-mock
+httpx
