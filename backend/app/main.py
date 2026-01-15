@@ -6,6 +6,8 @@ from app.audit.routes import router as audit_router
 from app.db.mongo import connect_to_mongo, close_mongo_connection
 from app.invites.routes import router as invite_router
 from app.tenants.routes import router as tenant_router
+from app.voice.routes import router as voice_router
+
 
 def create_app():
     app = FastAPI(
@@ -23,6 +25,8 @@ def create_app():
     app.include_router(audit_router, prefix="/audit", tags=["Audit"])
     app.include_router(invite_router, prefix="/invites", tags=["Invites"])
     app.include_router(tenant_router, prefix="/tenants", tags=["Tenants"])
+    app.include_router(voice_router, prefix="/voice", tags=["Voice"])
+
     # Mongo lifecycle
     @app.on_event("startup")
     async def startup_event():
